@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SAE Lecture d'une base de donnée</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="../CSS/polices.css" rel="stylesheet">
+    <link rel="icon" href="../Images/LogoHP.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <header>
+        <a href=" #"><img class="logo" src="../Images/LogoCP.png" alt="Logo Atn"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#accueil">Accueil</a>
+            <a href="#methode">Méthodes</a>
+            <a href="#informations">Informations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Accueil --->
+    <section class="home" id="accueil">
+        <div class="home-text"><br><br><br><br>
+            <h1>Pesticides<span id="coloring">.</span></h1><br><br>
+            <h2>Est-ce vraiment incontournable?</h2><br><br><br><br><br><br>
+            <p> <span id="coloring">Révolutionnons l'agriculture </span>avec des alternatives aux pesticides<br> qui
+                changeront notre façon de cultiver.</p>
+        </div>
+    </section>
+
+
+    <!-- graphs --->
+    <section>
+        <h2>Répartition des Méthodes</h2>
+        <canvas id="Graphique_1" width="800" height="400"></canvas>
+    </section>
+    <section>
+        <h2>Répartition des Méthodes par Famille</h2>
+        <canvas id="Graphique_2" width="800" height="400"></canvas>
+    </section>
+    <section>
+        <h2>Type de Traitement par Filière</h2>
+        <canvas id="Graphique_3" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Information -->
+    <section class="information section" id="informations">
+        <div class="information-text">
+            <h2>Informations sur le Biocontrôle</h2>
+
+            <div class="info-item">
+                <h4>1. Introduction</h4>
+                <p>Dans les champs, sous serre et en plein air, mais aussi dans les parcs et les jardins, des
+                    méthodes
+                    alternatives aux produits phytopharmaceutiques conventionnels peuvent être utilisées pour lutter
+                    contre les maladies, les agresseurs de cultures (insectes, virus, bactéries, acariens…) et les
+                    mauvaises herbes. Ces méthodes, réunies sous le terme « biocontrôle », s’appuient sur les
+                    mécanismes
+                    et interactions existant dans la nature.</p>
+            </div>
+
+            <div class="info-item">
+                <h4>2. Qu’est-ce que le biocontrôle ?</h4>
+                <p>Protéger les plantes pendant leur croissance est l’un des défis historiques du monde agricole.
+                    Pour
+                    limiter le recours aux produits phytopharmaceutiques conventionnels les plus préoccupants pour
+                    l’environnement et la santé, l’une des solutions réside dans les produits de biocontrôle, qui
+                    misent
+                    sur les mécanismes naturels et les interactions entre les espèces.</p>
+            </div>
+
+            <div class="info-item">
+                <h4>3. Les méthodes du biocontrôle</h4>
+                <p>On distingue quatre types de produits de biocontrôle :</p>
+
+                <ul>
+                    <li><strong>Les micro-organismes</strong> : Ce sont des champignons, bactéries et virus utilisés
+                        pour protéger les cultures contre les ravageurs et les maladies ou encore pour stimuler la
+                        vitalité des plantes.</li>
+                    <li><strong>Les macro-organismes</strong> : Ce sont des invertébrés, insectes, acariens ou
+                        nématodes
+                        auxiliaires utilisés de façon raisonnée pour protéger les cultures contre les attaques des
+                        bioagresseurs.</li>
+                    <li><strong>Les médiateurs chimiques</strong> : Il s’agit en particulier des phéromones qui
+                        permettent le suivi des vols d’insectes ravageurs et le contrôle des populations par le
+                        piégeage
+                        et la méthode de confusion sexuelle.</li>
+                    <li><strong>Les substances naturelles</strong> : D’origine végétale, animale ou minérale (le
+                        soufre
+                        ou le cuivre, par exemple), elles permettent de lutter efficacement contre les agresseurs
+                        des
+                        cultures.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="biocontrole">
+            <img src="../Images/biocontrole.jpg" class="GD2" alt="Photo de profil">
+        </div>
+    </section>
+
+
+    <!-- Vidéo -->
+    <section class="video-promo">
+        <div class="video-content">
+            <h2>Découvrez les alternatives révolutionnaires aux pesticides</h2>
+            <p>Plongez dans les méthodes innovantes qui changent le monde de l'agriculture durable. <br>Cliquez sur la
+                vidéo
+                pour en savoir plus !</p>
+            <a href="https://www.youtube.com/watch?v=NV9TPgGzFvA" target="_blank" class="btn-watch-video">Voir la
+                vidéo</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <h4>Redirections</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#methode">Méthodes</a></li>
+                        <li><a href="#informations">Informations</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Nos sources</h4>
+                    <ul>
+                        <li><a href="https://urlr.me/tJqgD">IUT Gustave Eiffel</a></li>
+                        <li><a href="">Un vieux excel
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Nous contacter</h4>
+                    <ul>
+                        <li><a href="mailto:">antipesti@gmail.com</a></li>
+                        <li><a href="https://urlr.me/6bcKV">
+                                Université Gustave Eiffel</a></li>
+                        <li><a>+33 07 12 34 56 89</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Notre équipe</h4>
+                    <ul>
+                        <li><a>Léonardo HENRIQUES-MATEUS</a></li>
+                        <li><a>Nicolas BUISSET</a></li>
+                        <li><a>Sarah ZAIEM</a></li>
+                        <li><a>Marjori PILI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-text">
+            <a href="./mentions-legales.html">Copyright ©2024 Tout droits réservés | Réalisé par l'équipe des
+                Beauvais (une ref que personne n'a...)
+                </p>
+        </div>
+    </section>
+
+    <!-- Link du script -->
+    <script type="module" src="../JS/script.js"></script>
+</body>
+
+</html>

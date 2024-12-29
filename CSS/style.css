@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #1d2027;
+    --text-color: #fff;
+    --second-color: #e0a911;
+    --main-color: #2D3638;
+    --third-color: #287f17;
+    --big-font: 10rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+#coloring {
+    color: var(--second-color);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+header.sticky {
+    background: var(--bg-color);
+    padding: 10px 18%;
+    transition-delay: 0.5s;
+    transition: 1s all ease;
+    box-shadow: 0px 16px 16px 1px rgba(0, 0, 0, 0.79);
+}
+
+.sticky .navbar a {
+    color: var(--text-color);
+}
+
+.sticky .navbar a:hover {
+    color: var(--second-color);
+}
+
+
+.logo {
+    margin-right: 6px;
+    height: 65px;
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    margin: 5px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover {
+    color: var(--second-color);
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--second-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after {
+    border-radius: 4px;
+    width: 100%;
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-50deg, rgba(30, 23, 49, 0.4), rgba(0, 0, 0, 3)), url(../Images/Pesticides-transformed.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 800;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.home-text h2 {
+    color: var(--second-color);
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.home-text p {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-img img {
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    transform: scale(0.8);
+}
+
+.about-text h4 {
+    font-size: 0%;
+    line-height: 1.2;
+}
+
+.about-text h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: var(---font);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.cv {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 15px;
+    border-radius: 5px;
+    transition: all .50s ease;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cv:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.about-social {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about-social i {
+    font-size: 25px;
+    color: var(--text-color);
+    transition: all .50s ease;
+}
+
+.about-social i:hover {
+    color: var(--second-color);
+}
+
+.GD {
+    border-radius: 79% 21% 85% 15% / 17% 78% 22% 83%;
+}
+
+.GD2 {
+    border-radius: 79% 21% 85% 15% / 17% 78% 22% 83%;
+}
+
+@media (max-width: 100vw) {
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+        z-index: 10;
+    }
+}
+
+.information {
+    background: linear-gradient(-50deg, rgba(30, 23, 49, 0.4), rgba(0, 0, 0, 3)), url(../Images/Pesticides-transformed.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+}
+
+.information-text h2 {
+    font-size: var(--h2-font);
+    color: var(--second-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    margin-bottom: 40px;
+}
+
+.info-item h4 {
+    font-size: 1.8rem;
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: var(--p-font);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-item ul {
+    margin-left: 20px;
+}
+
+.info-item ul li {
+    font-size: var(--p-font);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.info-item ul li strong {
+    color: var(--second-color);
+}
+
+#contact {
+    background: var(--main-color);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.list {
+    width: 25%;
+}
+
+.list h4 {
+    font-size: 21px;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.list h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background: var(--second-color);
+}
+
+.list ul li:not(last-child) {
+    margin-bottom: 16px;
+}
+
+.list ul li a {
+    color: #ffffffbf;
+    font-size: var(--p-font);
+    display: block;
+    transition: .3s;
+}
+
+.list ul li a:hover {
+    color: var(--second-color);
+    transform: translateX(14px);
+}
+
+.end-text {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.end-text a {
+    color: var(--text-color);
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+.end-text a:hover {
+    color: var(--second-color);
+    font-size: 14px;
+}
+
+.biocontrole {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    transform: scale(0.7);
+}
+
+.video-promo {
+    background: linear-gradient(135deg, #1b1b1b, #333);
+    color: #fff;
+    padding: 60px 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video-content h2 {
+    font-size: 2.5rem;
+    color: #e0a911;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.video-content p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.btn-watch-video {
+    background-color: #e0a911;
+    color: #1b1b1b;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-watch-video:hover {
+    background-color: #fff;
+    color: #1b1b1b;
+}
